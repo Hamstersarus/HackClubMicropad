@@ -1,0 +1,9 @@
+Manufacturer=ALPS Electric
+PartNumber=EC1110120201
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=7
+Version=1.1
+Released=2021-09-28 06:53:06
+Downloaded=2026-02-16 22:34:28
+3D=Y

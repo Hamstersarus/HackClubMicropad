@@ -1,0 +1,17 @@
+.EC1110120201 :1 ;11mm Metal Shaft Type Encoder 5-Pin Tray - Trays
+EC1110120201
+*STM IC
+*NGS
+*PNM 1=A1 2=B1 3=C1 4=D1 5=E1 6=MH1 7=MH2
+*PLB 1="CW" 2="CCW" 3="WIPER" 4="COM" 5="NO" 6="MH1" 7="MH2"
+*MXP 7
+*DFN EC1110120201
+~!Mouser Part Number (688-EC1110120201)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Alps-Alpine/EC1110120201?qs=6EGMNY9ZYDQZuRRlni99ZQ%3D%3D)
+~!Manufacturer_Name (ALPS Electric)
+~!Manufacturer_Part_Number (EC1110120201)
+~!Link Datasheet (https://tech.alpsalpine.com/e/products/detail/EC1110120201/)
+~!Height (25mm)
+~!3D_Model (EC1110120201)
+EC1110120201
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 
