@@ -4954,7 +4954,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EC1110120201"
+		(property "Footprint" "EC1110120201_Rotary_Encoder:EC1110120201"
 			(at 201.93 19.38 0)
 			(effects
 				(font
@@ -7200,7 +7200,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Seeed_Studio_XIAO_Series:XIAO-RP2040-DIP"
+		(property "Footprint" "XIAO_Series_Footprints:XIAO-RP2350-DIP"
 			(at 214.884 76.708 0)
 			(effects
 				(font
@@ -7209,7 +7209,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://files.seeedstudio.com/wiki/XIAO-RP2040/res/rp2040_datasheet.pdf"
 			(at 210.82 39.37 0)
 			(effects
 				(font
@@ -7227,7 +7227,7 @@
 				(hide yes)
 			)
 		)
-		(property "Vendor" "Amazon"
+		(property "Vendor" "Digi-Key"
 			(at 210.82 39.37 0)
 			(effects
 				(font
@@ -7236,7 +7236,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "https://www.amazon.com/Microcontroller-Dual-Core-MicroPython-CircuitPython-Interfaces/dp/B0DRNTQ338?th=1"
+		(property "Part_Number" "1597-102010428-ND"
 			(at 210.82 39.37 0)
 			(effects
 				(font
