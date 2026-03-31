@@ -2032,19 +2032,19 @@
 		(uuid "0848ac7d-7942-40fc-99da-868d1fc777dd")
 	)
 	(junction
-		(at 80.01 132.08)
+		(at 80.01 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0ae13ff6-2490-47f0-84d3-3f4f5702ffae")
 	)
 	(junction
-		(at 52.07 170.18)
+		(at 52.07 182.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "11ad2fca-070a-440f-ae78-6b9f2b096b94")
 	)
 	(junction
-		(at 81.28 170.18)
+		(at 81.28 182.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "14bf456c-8141-4d57-8e56-53085a723033")
@@ -2056,7 +2056,7 @@
 		(uuid "21f473c2-add9-42ab-9489-b22cbc61f32b")
 	)
 	(junction
-		(at 50.8 132.08)
+		(at 50.8 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "24c95684-fdcf-4736-93e8-c5c4681eacda")
@@ -2068,7 +2068,7 @@
 		(uuid "323e9a86-8ec8-44e1-81ab-056b3c73b867")
 	)
 	(junction
-		(at 39.37 114.3)
+		(at 39.37 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "34432ac2-5292-48ce-a888-6b64e59b9917")
@@ -2098,7 +2098,7 @@
 		(uuid "578b94f1-5443-428b-8f48-e03f4272f724")
 	)
 	(junction
-		(at 95.25 114.3)
+		(at 95.25 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5e92cd84-e390-4191-9dfe-6375f3fce366")
@@ -2134,7 +2134,7 @@
 		(uuid "847c57f9-e7b3-4b97-a8c6-21c6fefcce4f")
 	)
 	(junction
-		(at 68.58 132.08)
+		(at 68.58 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8e638a20-0721-4f2c-9867-43813cf8fc36")
@@ -2152,7 +2152,7 @@
 		(uuid "991a59ae-089c-499c-ab1b-e9922094c65a")
 	)
 	(junction
-		(at 39.37 132.08)
+		(at 39.37 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a287c954-4431-40c9-a2f1-90eef0c96c18")
@@ -2164,7 +2164,7 @@
 		(uuid "ad8bf440-da82-44fa-acad-5a04e56b748f")
 	)
 	(junction
-		(at 68.58 115.57)
+		(at 68.58 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c4c84398-f850-4f6c-918c-2e59e23fecbe")
@@ -2182,7 +2182,7 @@
 		(uuid "e0981053-8798-4540-b3f8-1013a4d5b626")
 	)
 	(junction
-		(at 95.25 132.08)
+		(at 95.25 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e373ae87-45d5-411e-9536-3d75464245e7")
@@ -2261,7 +2261,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 152.4) (xy 95.25 152.4)
+			(xy 102.87 165.1) (xy 95.25 165.1)
 		)
 		(stroke
 			(width 0)
@@ -2281,7 +2281,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 132.08) (xy 39.37 149.86)
+			(xy 39.37 144.78) (xy 39.37 162.56)
 		)
 		(stroke
 			(width 0)
@@ -2301,7 +2301,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 132.08) (xy 39.37 132.08)
+			(xy 31.75 144.78) (xy 39.37 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2341,7 +2341,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 114.3) (xy 95.25 132.08)
+			(xy 95.25 127) (xy 95.25 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2371,7 +2371,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 114.3) (xy 95.25 114.3)
+			(xy 101.6 127) (xy 95.25 127)
 		)
 		(stroke
 			(width 0)
@@ -2381,7 +2381,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 170.18) (xy 107.95 170.18)
+			(xy 81.28 182.88) (xy 107.95 182.88)
 		)
 		(stroke
 			(width 0)
@@ -2431,7 +2431,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 109.22) (xy 95.25 114.3)
+			(xy 95.25 121.92) (xy 95.25 127)
 		)
 		(stroke
 			(width 0)
@@ -2491,7 +2491,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 132.08) (xy 95.25 138.43)
+			(xy 95.25 144.78) (xy 95.25 151.13)
 		)
 		(stroke
 			(width 0)
@@ -2511,7 +2511,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 132.08) (xy 50.8 132.08)
+			(xy 39.37 144.78) (xy 50.8 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2541,7 +2541,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 114.3) (xy 39.37 114.3)
+			(xy 45.72 127) (xy 39.37 127)
 		)
 		(stroke
 			(width 0)
@@ -2561,7 +2561,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 170.18) (xy 81.28 170.18)
+			(xy 52.07 182.88) (xy 81.28 182.88)
 		)
 		(stroke
 			(width 0)
@@ -2571,7 +2571,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 132.08) (xy 68.58 152.4)
+			(xy 68.58 144.78) (xy 68.58 165.1)
 		)
 		(stroke
 			(width 0)
@@ -2591,7 +2591,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 152.4) (xy 68.58 152.4)
+			(xy 76.2 165.1) (xy 68.58 165.1)
 		)
 		(stroke
 			(width 0)
@@ -2621,7 +2621,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 124.46) (xy 80.01 120.65)
+			(xy 80.01 137.16) (xy 80.01 133.35)
 		)
 		(stroke
 			(width 0)
@@ -2631,7 +2631,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 109.22) (xy 39.37 114.3)
+			(xy 39.37 121.92) (xy 39.37 127)
 		)
 		(stroke
 			(width 0)
@@ -2651,7 +2651,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 115.57) (xy 68.58 132.08)
+			(xy 68.58 128.27) (xy 68.58 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2681,7 +2681,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 162.56) (xy 107.95 157.48)
+			(xy 107.95 175.26) (xy 107.95 170.18)
 		)
 		(stroke
 			(width 0)
@@ -2701,7 +2701,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 162.56) (xy 52.07 154.94)
+			(xy 52.07 175.26) (xy 52.07 167.64)
 		)
 		(stroke
 			(width 0)
@@ -2761,7 +2761,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 132.08) (xy 50.8 132.08)
+			(xy 68.58 144.78) (xy 50.8 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2801,7 +2801,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 162.56) (xy 81.28 157.48)
+			(xy 81.28 175.26) (xy 81.28 170.18)
 		)
 		(stroke
 			(width 0)
@@ -2811,7 +2811,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 132.08) (xy 80.01 132.08)
+			(xy 68.58 144.78) (xy 80.01 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2831,7 +2831,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 138.43) (xy 111.76 138.43)
+			(xy 95.25 151.13) (xy 111.76 151.13)
 		)
 		(stroke
 			(width 0)
@@ -2881,7 +2881,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 115.57) (xy 68.58 115.57)
+			(xy 74.93 128.27) (xy 68.58 128.27)
 		)
 		(stroke
 			(width 0)
@@ -2911,7 +2911,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 124.46) (xy 106.68 119.38)
+			(xy 106.68 137.16) (xy 106.68 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3021,7 +3021,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 132.08) (xy 95.25 132.08)
+			(xy 80.01 144.78) (xy 95.25 144.78)
 		)
 		(stroke
 			(width 0)
@@ -3081,7 +3081,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 143.51) (xy 95.25 152.4)
+			(xy 95.25 156.21) (xy 95.25 165.1)
 		)
 		(stroke
 			(width 0)
@@ -3101,7 +3101,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 143.51) (xy 95.25 143.51)
+			(xy 111.76 156.21) (xy 95.25 156.21)
 		)
 		(stroke
 			(width 0)
@@ -3111,7 +3111,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 124.46) (xy 50.8 119.38)
+			(xy 50.8 137.16) (xy 50.8 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3121,7 +3121,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 149.86) (xy 39.37 149.86)
+			(xy 46.99 162.56) (xy 39.37 162.56)
 		)
 		(stroke
 			(width 0)
@@ -3131,7 +3131,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 114.3) (xy 39.37 132.08)
+			(xy 39.37 127) (xy 39.37 144.78)
 		)
 		(stroke
 			(width 0)
@@ -3211,7 +3211,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 170.18) (xy 52.07 170.18)
+			(xy 39.37 182.88) (xy 52.07 182.88)
 		)
 		(stroke
 			(width 0)
@@ -3231,7 +3231,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 132.08) (xy 106.68 132.08)
+			(xy 95.25 144.78) (xy 106.68 144.78)
 		)
 		(stroke
 			(width 0)
@@ -3241,7 +3241,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 110.49) (xy 68.58 115.57)
+			(xy 68.58 123.19) (xy 68.58 128.27)
 		)
 		(stroke
 			(width 0)
@@ -3375,7 +3375,7 @@
 	)
 	(global_label "ROW1"
 		(shape input)
-		(at 39.37 170.18 180)
+		(at 39.37 182.88 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3385,7 +3385,7 @@
 		)
 		(uuid "1e174503-8635-4268-8b0a-ae1c013de45a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 31.1234 170.18 0)
+			(at 31.1234 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3441,7 +3441,7 @@
 	)
 	(global_label "COL0"
 		(shape input)
-		(at 39.37 109.22 90)
+		(at 39.37 121.92 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3451,7 +3451,7 @@
 		)
 		(uuid "6766ee32-b7e3-49b6-9b66-5750c20429f0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.37 101.3967 90)
+			(at 39.37 114.0967 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3463,7 +3463,7 @@
 	)
 	(global_label "COL1"
 		(shape input)
-		(at 68.58 110.49 90)
+		(at 68.58 123.19 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3473,7 +3473,7 @@
 		)
 		(uuid "737e0126-3a1a-4748-b837-d088861262d2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.58 102.6667 90)
+			(at 68.58 115.3667 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3507,7 +3507,7 @@
 	)
 	(global_label "ROTENCS2"
 		(shape input)
-		(at 111.76 143.51 0)
+		(at 111.76 156.21 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3517,7 +3517,7 @@
 		)
 		(uuid "839c27e9-1a65-4b9d-8487-46e6b2a1a7e1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 124.4818 143.51 0)
+			(at 124.4818 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3595,7 +3595,7 @@
 	)
 	(global_label "COL2"
 		(shape input)
-		(at 95.25 109.22 90)
+		(at 95.25 121.92 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3605,7 +3605,7 @@
 		)
 		(uuid "bc0fd1a9-dd36-4b96-ae49-102f5b3cc8a9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 95.25 101.3967 90)
+			(at 95.25 114.0967 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3639,7 +3639,7 @@
 	)
 	(global_label "ROW0"
 		(shape input)
-		(at 31.75 132.08 180)
+		(at 31.75 144.78 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3649,7 +3649,7 @@
 		)
 		(uuid "e9d129b0-bb3e-4b66-9d05-0673f31c9928")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 23.5034 132.08 0)
+			(at 23.5034 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3661,7 +3661,7 @@
 	)
 	(global_label "ROTENCS1"
 		(shape input)
-		(at 111.76 138.43 0)
+		(at 111.76 151.13 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3671,7 +3671,7 @@
 		)
 		(uuid "f5257e7d-897a-453e-baf2-7611a9d3d039")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 124.4818 138.43 0)
+			(at 124.4818 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3683,7 +3683,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push_45deg")
-		(at 48.26 116.84 0)
+		(at 48.26 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3692,7 +3692,7 @@
 		(fields_autoplaced yes)
 		(uuid "069d8042-bc43-4508-ab26-6d01f84e7200")
 		(property "Reference" "SW3"
-			(at 48.26 109.22 0)
+			(at 48.26 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3700,7 +3700,7 @@
 			)
 		)
 		(property "Value" "SW_Push_45deg"
-			(at 48.26 111.76 0)
+			(at 48.26 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3708,7 +3708,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 48.26 116.84 0)
+			(at 48.26 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3717,7 +3717,7 @@
 			)
 		)
 		(property "Datasheet" "https://cherry.saas.contentserv.com/admin/rest/document/30?ContextIDs=22889&Language=1"
-			(at 48.26 116.84 0)
+			(at 48.26 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3726,7 +3726,7 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 48.26 116.84 0)
+			(at 48.26 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3735,7 +3735,7 @@
 			)
 		)
 		(property "Part_Number" "1644-MX2A-E1NW-ND"
-			(at 48.26 116.84 0)
+			(at 48.26 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3744,7 +3744,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 48.26 116.84 0)
+			(at 48.26 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3943,7 +3943,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 106.68 128.27 90)
+		(at 106.68 140.97 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3952,7 +3952,7 @@
 		(fields_autoplaced yes)
 		(uuid "16e45e09-6462-4ace-b1b2-d9a607251f12")
 		(property "Reference" "D1"
-			(at 109.22 126.9999 90)
+			(at 109.22 139.6999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3961,7 +3961,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 109.22 129.5399 90)
+			(at 109.22 142.2399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3970,7 +3970,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 106.68 128.27 0)
+			(at 106.68 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3979,7 +3979,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/1n914-d.pdf"
-			(at 106.68 128.27 0)
+			(at 106.68 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3988,7 +3988,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 106.68 128.27 0)
+			(at 106.68 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3997,7 +3997,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 106.68 128.27 0)
+			(at 106.68 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4006,7 +4006,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 106.68 128.27 0)
+			(at 106.68 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4015,7 +4015,7 @@
 			)
 		)
 		(property "Part_Number" "1N4148FS-ND"
-			(at 106.68 128.27 90)
+			(at 106.68 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4024,7 +4024,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 106.68 128.27 90)
+			(at 106.68 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4143,7 +4143,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 50.8 128.27 90)
+		(at 50.8 140.97 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4152,7 +4152,7 @@
 		(fields_autoplaced yes)
 		(uuid "1fec286d-dd91-431b-9227-df8b11160b73")
 		(property "Reference" "D3"
-			(at 53.34 126.9999 90)
+			(at 53.34 139.6999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4161,7 +4161,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 53.34 129.5399 90)
+			(at 53.34 142.2399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4170,7 +4170,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 50.8 128.27 0)
+			(at 50.8 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4179,7 +4179,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/1n914-d.pdf"
-			(at 50.8 128.27 0)
+			(at 50.8 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4188,7 +4188,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 50.8 128.27 0)
+			(at 50.8 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4197,7 +4197,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 50.8 128.27 0)
+			(at 50.8 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4206,7 +4206,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 50.8 128.27 0)
+			(at 50.8 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4215,7 +4215,7 @@
 			)
 		)
 		(property "Part_Number" "1N4148FS-ND"
-			(at 50.8 128.27 90)
+			(at 50.8 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4224,7 +4224,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 50.8 128.27 90)
+			(at 50.8 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4606,7 +4606,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push_45deg")
-		(at 104.14 116.84 0)
+		(at 104.14 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4615,7 +4615,7 @@
 		(fields_autoplaced yes)
 		(uuid "6cfb1497-0d07-40a2-8ffb-a10f5d02493c")
 		(property "Reference" "SW1"
-			(at 104.14 109.22 0)
+			(at 104.14 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4623,7 +4623,7 @@
 			)
 		)
 		(property "Value" "SW_Push_45deg"
-			(at 104.14 111.76 0)
+			(at 104.14 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4631,7 +4631,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 104.14 116.84 0)
+			(at 104.14 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4640,7 +4640,7 @@
 			)
 		)
 		(property "Datasheet" "https://cherry.saas.contentserv.com/admin/rest/document/30?ContextIDs=22889&Language=1"
-			(at 104.14 116.84 0)
+			(at 104.14 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4649,7 +4649,7 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 104.14 116.84 0)
+			(at 104.14 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4658,7 +4658,7 @@
 			)
 		)
 		(property "Part_Number" "1644-MX2A-E1NW-ND"
-			(at 104.14 116.84 0)
+			(at 104.14 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4667,7 +4667,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 104.14 116.84 0)
+			(at 104.14 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4758,7 +4758,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push_45deg")
-		(at 77.47 118.11 0)
+		(at 77.47 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4767,7 +4767,7 @@
 		(fields_autoplaced yes)
 		(uuid "79f89f44-0a91-4f2b-b80d-f839df714365")
 		(property "Reference" "SW2"
-			(at 77.47 110.49 0)
+			(at 77.47 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4775,7 +4775,7 @@
 			)
 		)
 		(property "Value" "SW_Push_45deg"
-			(at 77.47 113.03 0)
+			(at 77.47 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4783,7 +4783,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 77.47 118.11 0)
+			(at 77.47 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4792,7 +4792,7 @@
 			)
 		)
 		(property "Datasheet" "https://cherry.saas.contentserv.com/admin/rest/document/30?ContextIDs=22889&Language=1"
-			(at 77.47 118.11 0)
+			(at 77.47 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4801,7 +4801,7 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 77.47 118.11 0)
+			(at 77.47 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4810,7 +4810,7 @@
 			)
 		)
 		(property "Part_Number" "1644-MX2A-E1NW-ND"
-			(at 77.47 118.11 0)
+			(at 77.47 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4819,7 +4819,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 77.47 118.11 0)
+			(at 77.47 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4844,7 +4844,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push_45deg")
-		(at 49.53 152.4 0)
+		(at 49.53 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4853,7 +4853,7 @@
 		(fields_autoplaced yes)
 		(uuid "7fa61585-f967-406b-bcb7-a1249420ecc4")
 		(property "Reference" "SW4"
-			(at 49.53 144.78 0)
+			(at 49.53 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4861,7 +4861,7 @@
 			)
 		)
 		(property "Value" "SW_Push_45deg"
-			(at 49.53 147.32 0)
+			(at 49.53 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4869,7 +4869,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 49.53 152.4 0)
+			(at 49.53 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4878,7 +4878,7 @@
 			)
 		)
 		(property "Datasheet" "https://cherry.saas.contentserv.com/admin/rest/document/30?ContextIDs=22889&Language=1"
-			(at 49.53 152.4 0)
+			(at 49.53 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4887,7 +4887,7 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 49.53 152.4 0)
+			(at 49.53 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4896,7 +4896,7 @@
 			)
 		)
 		(property "Part_Number" "1644-MX2A-E1NW-ND"
-			(at 49.53 152.4 0)
+			(at 49.53 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4905,7 +4905,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 49.53 152.4 0)
+			(at 49.53 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5228,7 +5228,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 107.95 166.37 90)
+		(at 107.95 179.07 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5237,7 +5237,7 @@
 		(fields_autoplaced yes)
 		(uuid "91584e40-cb2f-4af7-816d-e8aaa94472a7")
 		(property "Reference" "D6"
-			(at 110.49 165.0999 90)
+			(at 110.49 177.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5246,7 +5246,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 110.49 167.6399 90)
+			(at 110.49 180.3399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5255,7 +5255,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 107.95 166.37 0)
+			(at 107.95 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5264,7 +5264,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/1n914-d.pdf"
-			(at 107.95 166.37 0)
+			(at 107.95 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5273,7 +5273,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 107.95 166.37 0)
+			(at 107.95 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5282,7 +5282,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 107.95 166.37 0)
+			(at 107.95 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5291,7 +5291,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 107.95 166.37 0)
+			(at 107.95 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5300,7 +5300,7 @@
 			)
 		)
 		(property "Part_Number" "1N4148FS-ND"
-			(at 107.95 166.37 90)
+			(at 107.95 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5309,7 +5309,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 107.95 166.37 90)
+			(at 107.95 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5487,7 +5487,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 80.01 128.27 90)
+		(at 80.01 140.97 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5496,7 +5496,7 @@
 		(fields_autoplaced yes)
 		(uuid "aa9340c8-eac3-471c-9e27-ced8aeb9c525")
 		(property "Reference" "D2"
-			(at 82.55 126.9999 90)
+			(at 82.55 139.6999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5505,7 +5505,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 82.55 129.5399 90)
+			(at 82.55 142.2399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5514,7 +5514,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 80.01 128.27 0)
+			(at 80.01 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5523,7 +5523,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/1n914-d.pdf"
-			(at 80.01 128.27 0)
+			(at 80.01 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5532,7 +5532,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 80.01 128.27 0)
+			(at 80.01 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5541,7 +5541,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 80.01 128.27 0)
+			(at 80.01 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5550,7 +5550,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 80.01 128.27 0)
+			(at 80.01 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5559,7 +5559,7 @@
 			)
 		)
 		(property "Part_Number" "1N4148FS-ND"
-			(at 80.01 128.27 90)
+			(at 80.01 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5568,7 +5568,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 80.01 128.27 90)
+			(at 80.01 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5681,7 +5681,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push_45deg")
-		(at 78.74 154.94 0)
+		(at 78.74 167.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5690,7 +5690,7 @@
 		(fields_autoplaced yes)
 		(uuid "afe44c2c-2c70-4502-91e5-3bf838598f36")
 		(property "Reference" "SW5"
-			(at 78.74 147.32 0)
+			(at 78.74 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5698,7 +5698,7 @@
 			)
 		)
 		(property "Value" "SW_Push_45deg"
-			(at 78.74 149.86 0)
+			(at 78.74 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5706,7 +5706,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 78.74 154.94 0)
+			(at 78.74 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5715,7 +5715,7 @@
 			)
 		)
 		(property "Datasheet" "https://cherry.saas.contentserv.com/admin/rest/document/30?ContextIDs=22889&Language=1"
-			(at 78.74 154.94 0)
+			(at 78.74 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5724,7 +5724,7 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 78.74 154.94 0)
+			(at 78.74 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5733,7 +5733,7 @@
 			)
 		)
 		(property "Part_Number" "1644-MX2A-E1NW-ND"
-			(at 78.74 154.94 0)
+			(at 78.74 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5742,7 +5742,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 78.74 154.94 0)
+			(at 78.74 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6212,7 +6212,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 52.07 166.37 90)
+		(at 52.07 179.07 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6221,7 +6221,7 @@
 		(fields_autoplaced yes)
 		(uuid "d7968fc9-ed03-4159-92cc-9cf5284efa01")
 		(property "Reference" "D4"
-			(at 54.61 165.0999 90)
+			(at 54.61 177.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6230,7 +6230,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 54.61 167.6399 90)
+			(at 54.61 180.3399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6239,7 +6239,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 52.07 166.37 0)
+			(at 52.07 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6248,7 +6248,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/1n914-d.pdf"
-			(at 52.07 166.37 0)
+			(at 52.07 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6257,7 +6257,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 52.07 166.37 0)
+			(at 52.07 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6266,7 +6266,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 52.07 166.37 0)
+			(at 52.07 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6275,7 +6275,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 52.07 166.37 0)
+			(at 52.07 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6284,7 +6284,7 @@
 			)
 		)
 		(property "Part_Number" "1N4148FS-ND"
-			(at 52.07 166.37 90)
+			(at 52.07 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6293,7 +6293,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 52.07 166.37 90)
+			(at 52.07 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6601,7 +6601,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push_45deg")
-		(at 105.41 154.94 0)
+		(at 105.41 167.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6610,7 +6610,7 @@
 		(fields_autoplaced yes)
 		(uuid "e5df9443-5b23-4fcd-b7cb-f105b97b5a43")
 		(property "Reference" "SW6"
-			(at 105.41 147.32 0)
+			(at 105.41 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6618,7 +6618,7 @@
 			)
 		)
 		(property "Value" "SW_Push_45deg"
-			(at 105.41 149.86 0)
+			(at 105.41 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6626,7 +6626,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 105.41 154.94 0)
+			(at 105.41 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6635,7 +6635,7 @@
 			)
 		)
 		(property "Datasheet" "https://cherry.saas.contentserv.com/admin/rest/document/30?ContextIDs=22889&Language=1"
-			(at 105.41 154.94 0)
+			(at 105.41 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6644,7 +6644,7 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 105.41 154.94 0)
+			(at 105.41 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6653,7 +6653,7 @@
 			)
 		)
 		(property "Part_Number" "1644-MX2A-E1NW-ND"
-			(at 105.41 154.94 0)
+			(at 105.41 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6662,7 +6662,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 105.41 154.94 0)
+			(at 105.41 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7298,7 +7298,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 81.28 166.37 90)
+		(at 81.28 179.07 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7307,7 +7307,7 @@
 		(fields_autoplaced yes)
 		(uuid "f679b446-6258-48cc-bd8c-34b0e0d7b386")
 		(property "Reference" "D5"
-			(at 83.82 165.0999 90)
+			(at 83.82 177.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7316,7 +7316,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 83.82 167.6399 90)
+			(at 83.82 180.3399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7325,7 +7325,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 81.28 166.37 0)
+			(at 81.28 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7334,7 +7334,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/1n914-d.pdf"
-			(at 81.28 166.37 0)
+			(at 81.28 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7343,7 +7343,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 81.28 166.37 0)
+			(at 81.28 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7352,7 +7352,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 81.28 166.37 0)
+			(at 81.28 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7361,7 +7361,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 81.28 166.37 0)
+			(at 81.28 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7370,7 +7370,7 @@
 			)
 		)
 		(property "Part_Number" "1N4148FS-ND"
-			(at 81.28 166.37 90)
+			(at 81.28 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7379,7 +7379,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 81.28 166.37 90)
+			(at 81.28 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
