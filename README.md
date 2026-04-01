@@ -34,9 +34,11 @@ It is a fun, memorable, and beginner friendly productivity tool.
 
 <img width="730" height="721" alt="Screenshot From 2026-03-31 19-39-57" src="https://github.com/user-attachments/assets/fd13e33d-039b-49c9-9115-e39eb24e3b55" />
 
+
 **Assembled Board**
 
-INSERT HERE
+<img width="820" height="717" alt="image" src="https://github.com/user-attachments/assets/323a3ee5-cc19-4179-a23b-6fa0267bae57" />
+
 
 **Case**
 
