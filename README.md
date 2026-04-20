@@ -37,12 +37,16 @@ It is a fun, memorable, and beginner friendly productivity tool.
 
 **Assembled Board**
 
-<img width="820" height="717" alt="image" src="https://github.com/user-attachments/assets/323a3ee5-cc19-4179-a23b-6fa0267bae57" />
+<img width="1167" height="1304" alt="snapshot_assembly" src="https://github.com/user-attachments/assets/11aedb4f-9b7b-4105-a592-af1b7facb1cd" />
+
 
 
 **Case**
 
-<img width="730" height="721" alt="Screenshot From 2026-03-31 19-41-09" src="https://github.com/user-attachments/assets/59dbb043-2bec-449d-a687-eaf86c39428b" />
+<img width="1263" height="1206" alt="snapshot_case_only_back" src="https://github.com/user-attachments/assets/de758e59-299c-42b5-977e-5ff287965a88" />
+
+<img width="1189" height="1285" alt="snapshot_case_only_front" src="https://github.com/user-attachments/assets/7e2ddc50-dd56-4372-939a-72a66af384ac" />
+
 
 ---
 
