@@ -7171,7 +7171,7 @@
 				)
 			)
 		)
-		(property "Value" "XIAO-RP2040-DIP"
+		(property "Value" "XIAO-RP2350-DIP"
 			(at 212.725 41.91 0)
 			(effects
 				(font
@@ -7188,7 +7188,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://files.seeedstudio.com/wiki/XIAO-RP2040/res/rp2040_datasheet.pdf"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8932/102010550.pdf"
 			(at 210.82 39.37 0)
 			(effects
 				(font
@@ -7197,7 +7197,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "High preformance microcontroller"
 			(at 210.82 39.37 0)
 			(effects
 				(font
@@ -7215,7 +7215,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part_Number" "1597-102010428-ND"
+		(property "Part_Number" "1597-102010550-ND "
 			(at 210.82 39.37 0)
 			(effects
 				(font
@@ -7428,6 +7428,24 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 172.72 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part_Number" "56-CCF554K70FKE36CT-ND"
+			(at 172.72 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digi-Key"
 			(at 172.72 49.53 0)
 			(effects
 				(font
