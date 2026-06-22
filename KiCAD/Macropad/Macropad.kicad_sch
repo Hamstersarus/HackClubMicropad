@@ -1304,23 +1304,25 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "Brd"
-				(at 0 -3.81 0)
+			(property "Reference" "U2"
+				(at 7.62 1.2701 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "SSD1306"
-				(at 0 -1.27 0)
+				(at 7.62 -1.2699 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "DM-OLED096-636:MODULE_DM-OLED096-636"
 				(at 0 6.35 0)
 				(effects
 					(font
@@ -1329,7 +1331,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5447/MDOB128064V2V-YI.pdf"
 				(at 0 6.35 0)
 				(effects
 					(font
@@ -1339,6 +1341,24 @@
 				)
 			)
 			(property "Description" "SSD1306 OLED"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Part_Number" "3086-MDOB128064V2V-YI-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digi-Key"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1382,7 +1402,7 @@
 				(pin input line
 					(at -3.81 8.89 270)
 					(length 2.54)
-					(name "GND"
+					(name "VCC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1400,7 +1420,7 @@
 				(pin input line
 					(at -1.27 8.89 270)
 					(length 2.54)
-					(name "VCC"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2292,6 +2312,12 @@
 		(uuid "91bc80dd-8d25-4c73-9436-cbf0d9840ac7")
 	)
 	(junction
+		(at 146.05 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "92a287da-d62f-410f-9446-8d8a3c0091ab")
+	)
+	(junction
 		(at 135.89 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2326,12 +2352,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e0981053-8798-4540-b3f8-1013a4d5b626")
-	)
-	(junction
-		(at 146.05 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f33d758e-2cd9-463e-8bc0-f876fbd22997")
 	)
 	(junction
 		(at 157.48 39.37)
@@ -2401,7 +2421,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 72.39) (xy 143.51 72.39)
+			(xy 133.35 72.39) (xy 146.05 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2651,6 +2671,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 72.39) (xy 146.05 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bf80fa8-708f-4304-97eb-34377d45fab1")
+	)
+	(wire
+		(pts
 			(xy 52.07 182.88) (xy 81.28 182.88)
 		)
 		(stroke
@@ -2728,6 +2758,16 @@
 			(type default)
 		)
 		(uuid "5d2bf7f8-70d9-44b5-91f4-95a5867bee20")
+	)
+	(wire
+		(pts
+			(xy 143.51 68.58) (xy 146.05 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61a68e83-e278-4ae5-bab0-4c7baa2e8f37")
 	)
 	(wire
 		(pts
@@ -3001,16 +3041,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 76.2) (xy 143.51 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c551758-392f-4f6f-8ad6-595b6d95b50c")
-	)
-	(wire
-		(pts
 			(xy 212.09 97.79) (xy 212.09 82.55)
 		)
 		(stroke
@@ -3018,6 +3048,16 @@
 			(type default)
 		)
 		(uuid "9c676701-a89e-4e00-b3ac-c0154c80bea2")
+	)
+	(wire
+		(pts
+			(xy 143.51 76.2) (xy 143.51 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d5fa6fa-731b-421a-9e1e-1690f7492a4b")
 	)
 	(wire
 		(pts
@@ -3048,16 +3088,6 @@
 			(type default)
 		)
 		(uuid "a1c0dee5-3eac-450d-aea7-dd40df9e95a2")
-	)
-	(wire
-		(pts
-			(xy 146.05 59.69) (xy 146.05 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a568dac0-a747-4af3-aa09-617eff5dc69d")
 	)
 	(wire
 		(pts
@@ -3188,6 +3218,16 @@
 			(type default)
 		)
 		(uuid "cbfb73c9-c601-4182-8893-070d11c90395")
+	)
+	(wire
+		(pts
+			(xy 146.05 68.58) (xy 146.05 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5560070-1de1-4535-874b-969795693517")
 	)
 	(wire
 		(pts
