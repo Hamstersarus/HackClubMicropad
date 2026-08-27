@@ -19,8 +19,9 @@ from kmk.kmk_keyboard import KMKKeyboard
 from kmk.keys import KC, make_key
 from kmk.scanners import DiodeOrientation
 from kmk.modules import Module
-from kmk.modules.encoder import EncoderHandler
 from kmk.extensions.media_keys import MediaKeys
+
+import rotaryio
 
 W, H = 128, 64
 FRAME = W * H // 8  # 1024
@@ -116,11 +117,40 @@ keyboard.col_pins = (board.D3, board.D2, board.D1)   # COL0, COL1, COL2
 keyboard.row_pins = (board.D9, board.D10)            # ROW0, ROW1
 keyboard.diode_orientation = DiodeOrientation.COL2ROW
 
-# --- Encoder (volume) ---
-encoder = EncoderHandler()
-keyboard.modules.append(encoder)
-encoder.pins = ((board.D6, board.D7, None),)
-encoder.map = [((KC.VOLD, KC.VOLU),)]
+# --- Encoder (volume), hardware-decoded --------------------------------
+# rotaryio counts in the RP2350's PIO, so turns are never missed even when a
+# video blit stalls the main loop (KMK's software GPIO encoder mis-decodes
+# there). We tap VOLU/VOLD from the accumulated count, one step per scan.
+class HWVolumeEncoder(Module):
+    def __init__(self, pin_a, pin_b, cw=KC.VOLU, ccw=KC.VOLD):
+        self.enc = rotaryio.IncrementalEncoder(pin_a, pin_b)
+        self.cw = cw
+        self.ccw = ccw
+        self.last = 0
+        self.pending = 0
+
+    def during_bootup(self, keyboard):
+        self.last = self.enc.position
+
+    def before_matrix_scan(self, keyboard):
+        pos = self.enc.position
+        if pos != self.last:
+            self.pending += pos - self.last
+            self.last = pos
+        if self.pending > 0:
+            self.pending -= 1
+            keyboard.tap_key(self.cw)
+        elif self.pending < 0:
+            self.pending += 1
+            keyboard.tap_key(self.ccw)
+
+    def after_matrix_scan(self, keyboard): pass
+    def before_hid_send(self, keyboard): pass
+    def after_hid_send(self, keyboard): pass
+    def on_powersave_enable(self, keyboard): pass
+    def on_powersave_disable(self, keyboard): pass
+
+keyboard.modules.append(HWVolumeEncoder(board.D6, board.D7))
 
 # --- Keymap ---
 # Physical 2 cols x 3 rows. Electrical scan order is row0 then row1, col0..col2.
