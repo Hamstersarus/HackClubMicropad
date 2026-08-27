@@ -1,0 +1,16 @@
+[Unit]
+Description=Bad Apple macropad companion (streams video + plays audio on the play key)
+# Reference copy — install to ~/.config/systemd/user/ and enable with:
+#   systemctl --user daemon-reload
+#   systemctl --user enable --now badapple-companion.service
+
+[Service]
+Type=simple
+# %h expands to the user's home dir, so no hardcoded absolute path.
+WorkingDirectory=%h/Work/HackClubMicropad/firmware/host
+ExecStart=/usr/bin/python3 -u %h/Work/HackClubMicropad/firmware/host/play_companion.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target

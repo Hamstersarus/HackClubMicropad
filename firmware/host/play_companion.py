@@ -94,28 +94,39 @@ def main():
     ap.add_argument("--now", action="store_true", help="stream once immediately")
     args = ap.parse_args()
 
-    port = args.port or find_data_port()
-    if not port:
-        sys.exit("No data serial port found. Is boot.py enabling usb_cdc.data?")
-    print(f"data port: {port}")
     frames = load_frames(args.frames)
     print(f"loaded {len(frames)} frames from {args.frames}")
     splash = load_splash(args.splash)
 
-    ser = serial.Serial(port, 115200, timeout=0.1)
     if args.now:
-        stream(ser, frames, args.fps, args.audio, splash)
+        port = args.port or find_data_port()
+        if not port:
+            sys.exit("No data serial port found. Is boot.py enabling usb_cdc.data?")
+        stream(serial.Serial(port, 115200, timeout=0.1),
+               frames, args.fps, args.audio, splash)
         return
 
-    print("waiting for PLAY from the board (press the play key)...  Ctrl-C to quit")
-    pending = b""
+    # Resilient loop: wait for the board, serve PLAY presses, recover from unplugs.
+    print("companion running — waiting for the board / play key...  Ctrl-C to quit")
     while True:
-        pending += ser.read(64)
-        if b"PLAY" in pending:
+        port = args.port or find_data_port()
+        if not port:
+            time.sleep(2)          # board not plugged in yet; keep waiting
+            continue
+        try:
+            ser = serial.Serial(port, 115200, timeout=0.1)
+            print(f"connected: {port}")
             pending = b""
-            print("PLAY received -> starting")
-            stream(ser, frames, args.fps, args.audio, splash)
-            print("waiting for next PLAY...")
+            while True:
+                pending += ser.read(64)
+                if b"PLAY" in pending:
+                    pending = b""
+                    print("PLAY received -> starting")
+                    stream(ser, frames, args.fps, args.audio, splash)
+                    print("waiting for next PLAY...")
+        except (serial.SerialException, OSError):
+            print("board disconnected — waiting for it to come back...")
+            time.sleep(2)          # unplugged mid-run; retry the connection
 
 
 if __name__ == "__main__":
