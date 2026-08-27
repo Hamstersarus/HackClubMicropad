@@ -1,0 +1,5 @@
+# Generated from the source video by convert.py / ffmpeg — rebuild, don't commit.
+frames.bin
+frames_*.bin
+*.mp3
+__pycache__/

@@ -1,87 +1,139 @@
-## HackClub Macropad — KMK firmware
+## HackClub Macropad — KMK firmware with on-demand video playback
 ## Board: Seeed XIAO RP2350 (U1)
-## Pinout traced from KiCAD/Macropad/Macropad.kicad_pcb
 ##
-## Matrix (2 rows x 3 cols), diodes 1N4148 anode->switch->COL, cathode->ROW:
-##          COL0(D3)   COL1(D2)   COL2(D1)
-##   ROW0    SW3        SW2        SW1
-##   ROW1    SW4        SW5        SW6
+## Matrix (2 rows x 3 cols), diodes anode->switch->COL, cathode->ROW:
+##   physical layout is 2 cols x 3 rows; see keymap comments for the mapping.
+## Encoder (SW7): A=D6  B=D7  C=GND  (rotation = volume; turn-only)
+## OLED (SSD1306, U2) I2C: SDA=D4  SCL=D5  addr=0x3C  (raw driver, 400kHz)
 ##
-## Encoder (SW7): A=D6(GPIO0)  B=D7(GPIO1)  C=GND   (rotation only for now)
-## OLED (SSD1306, U2) on I2C: SDA=D4(GPIO6)  SCL=D5(GPIO7)  addr=0x3C
-## NeoPixels (SK6812 x3) on D8 are NOT wired up yet in this file.
+## Video: the top-left key sends "PLAY" over the USB *data* serial (enabled in
+## boot.py). The host companion (host/play_companion.py) then streams 1024-byte
+## OLED frames back over that channel while playing the audio on the computer.
+## This module blits incoming frames to the OLED between matrix scans.
 
 import board
+import busio
+import usb_cdc
 
 from kmk.kmk_keyboard import KMKKeyboard
-from kmk.keys import KC
+from kmk.keys import KC, make_key
 from kmk.scanners import DiodeOrientation
+from kmk.modules import Module
 from kmk.modules.encoder import EncoderHandler
 from kmk.extensions.media_keys import MediaKeys
-from kmk.extensions.display import Display, TextEntry
-from kmk.extensions.display.ssd1306 import SSD1306
+
+W, H = 128, 64
+FRAME = W * H // 8  # 1024
+ADDR = 0x3C
+INIT = bytes([0xAE, 0xD5, 0x80, 0xA8, 0x3F, 0xD3, 0x00, 0x40, 0x8D, 0x14,
+              0x20, 0x00, 0xA1, 0xC8, 0xDA, 0x12, 0x81, 0x7F, 0xD9, 0xF1,
+              0xDB, 0x40, 0xA4, 0xA6, 0x2E, 0xAF])
+
+
+class OLED:
+    """Minimal raw SSD1306 128x64 driver — fast full-frame blits."""
+    def __init__(self, scl, sda):
+        self.i2c = busio.I2C(scl, sda, frequency=400_000)  # SSD1306 max
+        while not self.i2c.try_lock():
+            pass
+        self.i2c.writeto(ADDR, b"\x00" + INIT)
+        self._win = bytes([0x00, 0x21, 0, 127, 0x22, 0, 7])
+        self._out = bytearray(1 + FRAME)
+        self._out[0] = 0x40
+
+    def show(self, buf):
+        self.i2c.writeto(ADDR, self._win)
+        self._out[1:] = buf
+        self.i2c.writeto(ADDR, self._out)
+
+
+def _load(path, default=b"\x00" * FRAME):
+    try:
+        with open(path, "rb") as f:
+            d = f.read(FRAME)
+        return d if len(d) == FRAME else default
+    except OSError:
+        return default
+
+
+class VideoModule(Module):
+    """Streams OLED frames from the USB data serial, between KMK scans."""
+    def __init__(self):
+        self.oled = OLED(board.D5, board.D4)
+        self.splash = _load("/splash.bin")
+        self.ser = usb_cdc.data
+        self.frame = bytearray(FRAME)
+        self.view = memoryview(self.frame)
+        self.fill = 0
+
+    def during_bootup(self, keyboard):
+        self.oled.show(self.splash)
+
+    def before_matrix_scan(self, keyboard):
+        ser = self.ser
+        if ser is not None and ser.in_waiting:
+            self.fill += ser.readinto(self.view[self.fill:])
+            if self.fill >= FRAME:
+                self.oled.show(self.frame)
+                self.fill = 0
+
+    def after_matrix_scan(self, keyboard):
+        pass
+
+    def before_hid_send(self, keyboard):
+        pass
+
+    def after_hid_send(self, keyboard):
+        pass
+
+    def on_powersave_enable(self, keyboard):
+        pass
+
+    def on_powersave_disable(self, keyboard):
+        pass
+
 
 keyboard = KMKKeyboard()
-
-# MediaKeys extension: required for volume/mute/media keycodes (KC.VOLU, etc.)
 keyboard.extensions.append(MediaKeys())
 
-# --- OLED display (SSD1306) --------------------------------------------
-# Change OLED_HEIGHT to 32 if your panel is the short 128x32 variant.
-OLED_WIDTH = 128
-OLED_HEIGHT = 64
-oled_driver = SSD1306(sda=board.D4, scl=board.D5, device_address=0x3C)
-keyboard.extensions.append(
-    Display(
-        display=oled_driver,
-        width=OLED_WIDTH,
-        height=OLED_HEIGHT,
-        entries=[
-            TextEntry(text="Macropad", x=0, y=0),
-            TextEntry(text="Hamstersaurus", x=0, y=22),
-            TextEntry(text="ready :)", x=0, y=44),
-        ],
-        brightness=0.8,
-    )
-)
+video = VideoModule()
+keyboard.modules.append(video)
 
-# --- Key matrix ---------------------------------------------------------
-# Order matters: it defines the index of each key in the keymap below.
+# Video control keys: signal the host companion over the USB data serial.
+def _play(*args):
+    if usb_cdc.data is not None:
+        usb_cdc.data.write(b"PLAY\n")
+
+def _stop(*args):
+    if usb_cdc.data is not None:
+        usb_cdc.data.write(b"STOP\n")
+
+make_key(names=("VPLAY",), on_press=_play)
+make_key(names=("VSTOP",), on_press=_stop)
+
+# --- Key matrix ---
 keyboard.col_pins = (board.D3, board.D2, board.D1)   # COL0, COL1, COL2
 keyboard.row_pins = (board.D9, board.D10)            # ROW0, ROW1
 keyboard.diode_orientation = DiodeOrientation.COL2ROW
 
-# --- Encoder ------------------------------------------------------------
+# --- Encoder (volume) ---
 encoder = EncoderHandler()
 keyboard.modules.append(encoder)
-# (pin_a, pin_b, pin_button)  -> button is None because the knob is turn-only
 encoder.pins = ((board.D6, board.D7, None),)
+encoder.map = [((KC.VOLD, KC.VOLU),)]
 
-# --- Keymap -------------------------------------------------------------
-# Flat list, row-major, matching the physical table above.
-# These are placeholder keycodes — change them to whatever you want each
-# key to do (KC.A, KC.MUTE, macros, layer switches, etc.).
-# Physical board is 2 columns x 3 rows; desired letters top -> bottom:
-#     top-left = a      top-right = b
-#     mid-left = c      mid-right = d
-#     bot-left = e      bot-right = f
-#
-# The list below is in ELECTRICAL scan order (row0 then row1, col0..col2),
-# which does not match the physical grid, so each slot is labelled with its
-# switch designator and physical position.
+# --- Keymap ---
+# Physical 2 cols x 3 rows. Electrical scan order is row0 then row1, col0..col2.
+#   top-left = PLAY video       top-right = STOP video
+#   mid-left = c                mid-right = d
+#   bot-left = e                bot-right = f
 keyboard.keymap = [
     [
-        # ROW0:  SW3(top-right)     SW2(bot-left)      SW1(top-left)
-        KC.B,              KC.E,              KC.A,
-        # ROW1:  SW4(bot-right)     SW5(mid-left)      SW6(mid-right)
-        KC.F,              KC.C,              KC.D,
+        # ROW0:  SW3(top-right)   SW2(bot-left)   SW1(top-left)
+        KC.VSTOP,        KC.E,           KC.VPLAY,
+        # ROW1:  SW4(bot-right)   SW5(mid-left)   SW6(mid-right)
+        KC.F,            KC.C,           KC.D,
     ],
-]
-
-# Encoder map: one (counter-clockwise, clockwise) tuple per layer.
-# Turning the knob changes the volume.
-encoder.map = [
-    ((KC.VOLD, KC.VOLU),),
 ]
 
 if __name__ == '__main__':
